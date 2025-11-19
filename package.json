@@ -1,0 +1,22 @@
+{
+  "name": "my-hardhat-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile": "cross-env NODE_OPTIONS=--no-warnings hardhat compile",
+    "test": "cross-env NODE_OPTIONS=--no-warnings hardhat test",
+    "deploy": "cross-env NODE_OPTIONS=--no-warnings hardhat run scripts/deploy.js --network sepolia",
+    "verify": "hardhat verify --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}

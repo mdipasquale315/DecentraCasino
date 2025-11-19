@@ -1,0 +1,12 @@
+[profile.default]
+cache_path = 'cache_forge'
+libs       = [ 'lib', 'node_modules' ]
+out        = 'out'
+src        = 'contracts'
+test       = 'test'
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
